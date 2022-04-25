@@ -73,25 +73,33 @@ public class TestMain {
                         } else {
                             //zucchero solo caldi 
                             zucchero = d.sceltaZucchero();
-                            valutaIns = d.sceltaDenaroCaldo(i);
-                            resto = d.erogaProdottoCaldo(i, valutaIns);
-                            d.outputDistributoreCaldi(i, resto, valutaIns);
-                            d.eliminaAtIndexCalde(i);
+                            if (zucchero == -69) {
+                                break;
+                            } else {
+                                valutaIns = d.sceltaDenaroCaldo(i);
+                                resto = d.erogaProdottoCaldo(i, valutaIns);
+                                d.outputDistributoreCaldi(i, resto, valutaIns);
+                                d.eliminaAtIndexCalde(i);
+                            }
 
                         }
                         break;
 
                     case 1:
-                        i = d.cercaProdottoCaldo(scelta);
+                         i = d.cercaProdottoCaldo(scelta);
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
                             //zucchero solo caldi 
                             zucchero = d.sceltaZucchero();
-                            valutaIns = d.sceltaDenaroCaldo(i);
-                            resto = d.erogaProdottoCaldo(i, valutaIns);
-                            d.outputDistributoreCaldi(i, resto, valutaIns);
-                            d.eliminaAtIndexCalde(i);
+                            if (zucchero == -69) {
+                                break;
+                            } else {
+                                valutaIns = d.sceltaDenaroCaldo(i);
+                                resto = d.erogaProdottoCaldo(i, valutaIns);
+                                d.outputDistributoreCaldi(i, resto, valutaIns);
+                                d.eliminaAtIndexCalde(i);
+                            }
 
                         }
                         break;
@@ -103,39 +111,51 @@ public class TestMain {
                         } else {
                             //zucchero solo caldi 
                             zucchero = d.sceltaZucchero();
-                            valutaIns = d.sceltaDenaroCaldo(i);
-                            resto = d.erogaProdottoCaldo(i, valutaIns);
-                            d.outputDistributoreCaldi(i, resto, valutaIns);
-                            d.eliminaAtIndexCalde(i);
+                            if (zucchero == -69) {
+                                break;
+                            } else {
+                                valutaIns = d.sceltaDenaroCaldo(i);
+                                resto = d.erogaProdottoCaldo(i, valutaIns);
+                                d.outputDistributoreCaldi(i, resto, valutaIns);
+                                d.eliminaAtIndexCalde(i);
+                            }
 
                         }
                         break;
 
                     case 3:
-                        i = d.cercaProdottoCaldo(scelta);
+                         i = d.cercaProdottoCaldo(scelta);
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
                             //zucchero solo caldi 
                             zucchero = d.sceltaZucchero();
-                            valutaIns = d.sceltaDenaroCaldo(i);
-                            resto = d.erogaProdottoCaldo(i, valutaIns);
-                            d.outputDistributoreCaldi(i, resto, valutaIns);
-                            d.eliminaAtIndexCalde(i);
+                            if (zucchero == -69) {
+                                break;
+                            } else {
+                                valutaIns = d.sceltaDenaroCaldo(i);
+                                resto = d.erogaProdottoCaldo(i, valutaIns);
+                                d.outputDistributoreCaldi(i, resto, valutaIns);
+                                d.eliminaAtIndexCalde(i);
+                            }
 
                         }
                         break;
                     case 4:
-                        i = d.cercaProdottoCaldo(scelta);
+                         i = d.cercaProdottoCaldo(scelta);
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
                             //zucchero solo caldi 
                             zucchero = d.sceltaZucchero();
-                            valutaIns = d.sceltaDenaroCaldo(i);
-                            resto = d.erogaProdottoCaldo(i, valutaIns);
-                            d.outputDistributoreCaldi(i, resto, valutaIns);
-                            d.eliminaAtIndexCalde(i);
+                            if (zucchero == -69) {
+                                break;
+                            } else {
+                                valutaIns = d.sceltaDenaroCaldo(i);
+                                resto = d.erogaProdottoCaldo(i, valutaIns);
+                                d.outputDistributoreCaldi(i, resto, valutaIns);
+                                d.eliminaAtIndexCalde(i);
+                            }
 
                         }
                         break;

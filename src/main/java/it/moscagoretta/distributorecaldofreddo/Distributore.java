@@ -250,6 +250,7 @@ public class Distributore {
 
                 default:
                     System.out.println("inserisca uno dei numeri selezionati");
+                    return -69;
             }
 
             break;
