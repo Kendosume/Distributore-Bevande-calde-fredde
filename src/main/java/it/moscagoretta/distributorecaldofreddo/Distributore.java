@@ -221,7 +221,7 @@ public class Distributore {
             System.out.println("5: *****");
             System.out.println("----------------------------------------");
 
-            System.out.println("Scegli la quantrità di zucchero: ");
+            System.out.println("Scegli la quantità di zucchero: ");
             String sceltaaa = scanner.nextLine();
             Integer scelta = Integer.parseInt(sceltaaa);
 
