@@ -82,7 +82,7 @@ public class Distributore {
     }
 
     public double erogaProdottoFreddo(int i, double valutaIns) {
-        
+
         double x = 0;
         if (bevandeFredde[i].tipo.equals("freddo")) {
             //resto
@@ -292,6 +292,8 @@ public class Distributore {
         if (resto == -12 || i == -1) {
             System.out.println("non puoi eseguire questo comando");
         } else {
+            System.out.println("---------------------------------------------------------------------------------");
+            System.out.println("Prodotto erogato: ");
             System.out.println("Tipo: " + bevandeCalde[i].getTipo());
             System.out.println("Prodotto erogato: " + bevandeCalde[i].getSelezione().getSelezione());
             if (sum == 0) {
@@ -310,6 +312,8 @@ public class Distributore {
         if (resto == -12 || i == -1) {
             System.out.println("non puoi eseguire questo comando");
         } else {
+            System.out.println("---------------------------------------------------------------------------------");
+            System.out.println("Prodotto erogato: ");
             System.out.println("Tipo: " + bevandeFredde[i].getTipo());
             System.out.println("Prodotto erogato: " + bevandeFredde[i].getSelezione().getSelezione());
             System.out.println("Denaro inserito: " + valutaIns);
