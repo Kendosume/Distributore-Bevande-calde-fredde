@@ -258,7 +258,7 @@ public class TestMain {
                 System.out.println("1234: Visualizza i prodotti della categoria che selezionerà nel distributore");
                 System.out.println("4321: Exit");
             } else {
-                System.out.println("Provi a scrivere con la minuscola la categoria");
+                System.out.println("Provi a scrivere (calda) o (fredda)");
             }
 
         } while (true);
