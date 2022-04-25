@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author Matteo
  */
-public class Disptributore {
+public class Distributore {
 
     Scanner scanner = new Scanner(System.in);
 
@@ -21,10 +21,10 @@ public class Disptributore {
 
     int sum = 0;
 
-    public Disptributore() {
+    public Distributore() {
     }
 
-    public Disptributore(int nbevandeFredde, int nbevandeCalde) {
+    public Distributore(int nbevandeFredde, int nbevandeCalde) {
         this.bevandeFredde = new BevandaFredda[nbevandeFredde];
         this.bevandeCalde = new BevandaCalda[nbevandeCalde];
     }
@@ -50,7 +50,6 @@ public class Disptributore {
             this.indexFredde++;
         }
     }
-/////BIG PROBLEM
 
     public int cercaProdottoCaldo(int pSelezionato) {
         for (int i = 0; i < this.indexCalde; i++) {
@@ -71,7 +70,7 @@ public class Disptributore {
     }
 
     public double erogaProdotto(int i, double valutaIns) {
-        
+
         double x = 0;
         if (bevandeCalde[i].tipo.equals("caldo")) {
             //resto
@@ -90,35 +89,44 @@ public class Disptributore {
         double somma = 0;
         boolean a = true;
         do {
+            System.out.println("Inserire un importo fino al raggiungimento del costo del prodotto selezionato");
             System.out.println("----------------------------------------");
-            System.out.println("0: 0.50€");
-            System.out.println("1: 1€");
-            System.out.println("2: 2€");
-            System.out.println("3: 5€");
-            System.out.println("4: 10€");
+            System.out.println("0: 0.10€");
+            System.out.println("1: 0.20€");
+            System.out.println("2: 0.50€");
+            System.out.println("3: 1€");
+            System.out.println("4: 2€");
+            System.out.println("5: 5€");
+            System.out.println("6: 10€");
             System.out.println("----------------------------------------");
 
-            System.out.println("Scegli un opzione: ");
+            System.out.println("Scegli un opzione per pagare: ");
             String sceltaaa = scanner.nextLine();
             Integer scelta = Integer.parseInt(sceltaaa);
 
             switch (scelta) {
                 case 0:
-                    somma += 0.5;
+                    somma += 0.10;
                     break;
 
                 case 1:
-                    somma += 1;
+                    somma += 0.20;
                     break;
 
                 case 2:
-                    somma += 2;
+                    somma += 0.50;
                     break;
 
                 case 3:
-                    somma += 5;
+                    somma += 1;
                     break;
                 case 4:
+                    somma += 2;
+                    break;
+                case 5:
+                    somma += 5;
+                    break;
+                case 6:
                     somma += 10;
                     break;
 
@@ -138,35 +146,44 @@ public class Disptributore {
         double somma = 0;
         boolean a = true;
         do {
+            System.out.println("Inserire un importo fino al raggiungimento del costo del prodotto selezionato");
             System.out.println("----------------------------------------");
-            System.out.println("0: 0.50€");
-            System.out.println("1: 1€");
-            System.out.println("2: 2€");
-            System.out.println("3: 5€");
-            System.out.println("4: 10€");
+            System.out.println("0: 0.10€");
+            System.out.println("1: 0.20€");
+            System.out.println("2: 0.50€");
+            System.out.println("3: 1€");
+            System.out.println("4: 2€");
+            System.out.println("5: 5€");
+            System.out.println("6: 10€");
             System.out.println("----------------------------------------");
 
-            System.out.println("Scegli un opzione: ");
+            System.out.println("Scegli un opzione per pagare: ");
             String sceltaaa = scanner.nextLine();
             Integer scelta = Integer.parseInt(sceltaaa);
 
             switch (scelta) {
                 case 0:
-                    somma += 0.5;
+                    somma += 0.10;
                     break;
 
                 case 1:
-                    somma += 1;
+                    somma += 0.20;
                     break;
 
                 case 2:
-                    somma += 2;
+                    somma += 0.50;
                     break;
 
                 case 3:
-                    somma += 5;
+                    somma += 1;
                     break;
                 case 4:
+                    somma += 2;
+                    break;
+                case 5:
+                    somma += 5;
+                    break;
+                case 6:
                     somma += 10;
                     break;
 
@@ -193,7 +210,7 @@ public class Disptributore {
             System.out.println("2: **");
             System.out.println("3: ***");
             System.out.println("4: ****");
-            System.out.println("4: *****");
+            System.out.println("5: *****");
             System.out.println("----------------------------------------");
 
             System.out.println("Scegli la quantrità di zucchero: ");
@@ -263,28 +280,32 @@ public class Disptributore {
     }
 
     public void outputDistributoreCaldi(int i, double resto, double valutaIns) {
-
+        float restto = (float) resto;
         if (resto == -12 || i == -1) {
             System.out.println("non puoi eseguire questo comando");
         } else {
             System.out.println("Tipo: " + bevandeCalde[i].getTipo());
             System.out.println("Prodotto erogato: " + bevandeCalde[i].getSelezione().getSelezione());
-            System.out.println("Zucchero: " + sum);
+            if (sum == 0) {
+                System.out.println("Zucchero: " + "senza zucchero");
+            } else {
+                System.out.println("Zucchero: " + sum);
+            }
             System.out.println("Denaro inserito: " + valutaIns);
-            System.out.println("Resto dovuto: " + resto);
+            System.out.println("Resto dovuto: " + restto);
         }
 
     }
 
     public void outputDistributoreFreddi(int i, double resto, double valutaIns) {
-
+        float restto = (float) resto;
         if (resto == -12 || i == -1) {
             System.out.println("non puoi eseguire questo comando");
         } else {
             System.out.println("Tipo: " + bevandeFredde[i].getTipo());
             System.out.println("Prodotto erogato: " + bevandeFredde[i].getSelezione().getSelezione());
             System.out.println("Denaro inserito: " + valutaIns);
-            System.out.println("Resto dovuto: " + resto);
+            System.out.println("Resto dovuto: " + restto);
         }
 
     }

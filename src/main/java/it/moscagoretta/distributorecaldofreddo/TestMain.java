@@ -14,7 +14,7 @@ public class TestMain {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Disptributore d = new Disptributore(20, 20);
+        Distributore d = new Distributore(20, 20);
         double valutaIns = 0;
         double resto = 0;
         int zucchero = 0;
@@ -154,7 +154,7 @@ public class TestMain {
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             } else if (sceltaa.equals("fredda")) {
                 String sceltaaa = scanner.nextLine();
-                Integer scelta = Integer.parseInt(sceltaa);
+                Integer scelta = Integer.parseInt(sceltaaa);
                 
                 switch (scelta) {
                     case 0:
