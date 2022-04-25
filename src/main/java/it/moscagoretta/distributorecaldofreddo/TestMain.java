@@ -222,7 +222,7 @@ public class TestMain {
                         }
                         break;
                     case 1234:
-                        d.vediProdottiCaldi();
+                        d.vediProdottiFreddi();
                         break;
                     case 4321:
                         System.exit(0);
