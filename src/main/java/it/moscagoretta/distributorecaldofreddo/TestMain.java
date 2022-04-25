@@ -19,6 +19,7 @@ public class TestMain {
         double resto = 0;
         int zucchero = 0;
         int i = 0;
+        float resoconto = 0;
         String string;
         //inseermento automatico dei prodotti / in futuro si potranno aggiungere tramite una funzione apposita
         for (int ih = 0; ih < 2; ih++) {
@@ -76,6 +77,7 @@ public class TestMain {
                             if (zucchero == -69) {
                                 break;
                             } else {
+                                resoconto += d.fSegretaCalda(i);
                                 valutaIns = d.sceltaDenaroCaldo(i);
                                 resto = d.erogaProdottoCaldo(i, valutaIns);
                                 d.outputDistributoreCaldi(i, resto, valutaIns);
@@ -86,7 +88,7 @@ public class TestMain {
                         break;
 
                     case 1:
-                         i = d.cercaProdottoCaldo(scelta);
+                        i = d.cercaProdottoCaldo(scelta);
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
@@ -95,6 +97,7 @@ public class TestMain {
                             if (zucchero == -69) {
                                 break;
                             } else {
+                                resoconto += d.fSegretaCalda(i);
                                 valutaIns = d.sceltaDenaroCaldo(i);
                                 resto = d.erogaProdottoCaldo(i, valutaIns);
                                 d.outputDistributoreCaldi(i, resto, valutaIns);
@@ -114,6 +117,7 @@ public class TestMain {
                             if (zucchero == -69) {
                                 break;
                             } else {
+                                resoconto += d.fSegretaCalda(i);
                                 valutaIns = d.sceltaDenaroCaldo(i);
                                 resto = d.erogaProdottoCaldo(i, valutaIns);
                                 d.outputDistributoreCaldi(i, resto, valutaIns);
@@ -124,7 +128,7 @@ public class TestMain {
                         break;
 
                     case 3:
-                         i = d.cercaProdottoCaldo(scelta);
+                        i = d.cercaProdottoCaldo(scelta);
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
@@ -133,6 +137,7 @@ public class TestMain {
                             if (zucchero == -69) {
                                 break;
                             } else {
+                                resoconto += d.fSegretaCalda(i);
                                 valutaIns = d.sceltaDenaroCaldo(i);
                                 resto = d.erogaProdottoCaldo(i, valutaIns);
                                 d.outputDistributoreCaldi(i, resto, valutaIns);
@@ -142,7 +147,7 @@ public class TestMain {
                         }
                         break;
                     case 4:
-                         i = d.cercaProdottoCaldo(scelta);
+                        i = d.cercaProdottoCaldo(scelta);
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
@@ -151,6 +156,7 @@ public class TestMain {
                             if (zucchero == -69) {
                                 break;
                             } else {
+                                resoconto += d.fSegretaCalda(i);
                                 valutaIns = d.sceltaDenaroCaldo(i);
                                 resto = d.erogaProdottoCaldo(i, valutaIns);
                                 d.outputDistributoreCaldi(i, resto, valutaIns);
@@ -184,6 +190,7 @@ public class TestMain {
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
+                            resoconto += d.fSegretaFredda(i);
                             valutaIns = d.sceltaDenaroFreddo(i);
                             resto = d.erogaProdottoFreddo(i, valutaIns);
                             d.outputDistributoreFreddi(i, resto, valutaIns);
@@ -197,6 +204,7 @@ public class TestMain {
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
+                            resoconto += d.fSegretaFredda(i);
                             valutaIns = d.sceltaDenaroFreddo(i);
                             resto = d.erogaProdottoFreddo(i, valutaIns);
                             d.outputDistributoreFreddi(i, resto, valutaIns);
@@ -210,6 +218,7 @@ public class TestMain {
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
+                            resoconto += d.fSegretaFredda(i);
                             valutaIns = d.sceltaDenaroFreddo(i);
                             resto = d.erogaProdottoFreddo(i, valutaIns);
                             d.outputDistributoreFreddi(i, resto, valutaIns);
@@ -222,6 +231,7 @@ public class TestMain {
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
+                            resoconto += d.fSegretaFredda(i);
                             valutaIns = d.sceltaDenaroFreddo(i);
                             resto = d.erogaProdottoFreddo(i, valutaIns);
                             d.outputDistributoreFreddi(i, resto, valutaIns);
@@ -234,6 +244,7 @@ public class TestMain {
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
+                            resoconto += d.fSegretaFredda(i);
                             valutaIns = d.sceltaDenaroFreddo(i);
                             resto = d.erogaProdottoFreddo(i, valutaIns);
                             d.outputDistributoreFreddi(i, resto, valutaIns);
@@ -243,6 +254,9 @@ public class TestMain {
                         break;
                     case 1234:
                         d.vediProdottiFreddi();
+                        break;
+                    case 1232:
+                        System.out.println("Resoconto: " + resoconto);
                         break;
                     case 4321:
                         System.exit(0);
@@ -256,6 +270,7 @@ public class TestMain {
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
             } else if (sceltaa.equals("wasd")) {
                 System.out.println("1234: Visualizza i prodotti della categoria che selezionerà nel distributore");
+                System.out.println("1232: Resoconto fine giornata");
                 System.out.println("4321: Exit");
             } else {
                 System.out.println("Provi a scrivere (calda) o (fredda)");

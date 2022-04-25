@@ -80,6 +80,21 @@ public class Distributore {
 
         return -12; //boh fra esplodi
     }
+    
+    
+    public float fSegretaCalda(int i){
+        float a=0;
+        a+=bevandeCalde[i].getSelezione().getPrezzo();
+        return a;
+    }
+    public float fSegretaFredda(int i){
+        float a=0;
+        a+=bevandeFredde[i].getSelezione().getPrezzo();
+        return a;
+    }
+    
+    
+    
 
     public double erogaProdottoFreddo(int i, double valutaIns) {
 
