@@ -74,7 +74,7 @@ public class TestMain {
                             //zucchero solo caldi 
                             zucchero = d.sceltaZucchero();
                             valutaIns = d.sceltaDenaroCaldo(i);
-                            resto = d.erogaProdotto(i, valutaIns);
+                            resto = d.erogaProdottoCaldo(i, valutaIns);
                             d.outputDistributoreCaldi(i, resto, valutaIns);
                             d.eliminaAtIndexCalde(i);
 
@@ -89,7 +89,7 @@ public class TestMain {
                             //zucchero solo caldi 
                             zucchero = d.sceltaZucchero();
                             valutaIns = d.sceltaDenaroCaldo(i);
-                            resto = d.erogaProdotto(i, valutaIns);
+                            resto = d.erogaProdottoCaldo(i, valutaIns);
                             d.outputDistributoreCaldi(i, resto, valutaIns);
                             d.eliminaAtIndexCalde(i);
 
@@ -104,7 +104,7 @@ public class TestMain {
                             //zucchero solo caldi 
                             zucchero = d.sceltaZucchero();
                             valutaIns = d.sceltaDenaroCaldo(i);
-                            resto = d.erogaProdotto(i, valutaIns);
+                            resto = d.erogaProdottoCaldo(i, valutaIns);
                             d.outputDistributoreCaldi(i, resto, valutaIns);
                             d.eliminaAtIndexCalde(i);
 
@@ -119,7 +119,7 @@ public class TestMain {
                             //zucchero solo caldi 
                             zucchero = d.sceltaZucchero();
                             valutaIns = d.sceltaDenaroCaldo(i);
-                            resto = d.erogaProdotto(i,  valutaIns);
+                            resto = d.erogaProdottoCaldo(i, valutaIns);
                             d.outputDistributoreCaldi(i, resto, valutaIns);
                             d.eliminaAtIndexCalde(i);
 
@@ -133,7 +133,7 @@ public class TestMain {
                             //zucchero solo caldi 
                             zucchero = d.sceltaZucchero();
                             valutaIns = d.sceltaDenaroCaldo(i);
-                            resto = d.erogaProdotto(i,valutaIns);
+                            resto = d.erogaProdottoCaldo(i, valutaIns);
                             d.outputDistributoreCaldi(i, resto, valutaIns);
                             d.eliminaAtIndexCalde(i);
 
@@ -153,9 +153,11 @@ public class TestMain {
 
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             } else if (sceltaa.equals("fredda")) {
+
+                System.out.println("Scegli un opzione: ");
                 String sceltaaa = scanner.nextLine();
                 Integer scelta = Integer.parseInt(sceltaaa);
-                
+
                 switch (scelta) {
                     case 0:
                         i = d.cercaProdottoFreddo(scelta);
@@ -163,7 +165,7 @@ public class TestMain {
                             System.out.println("Il prodotto e' terminato");
                         } else {
                             valutaIns = d.sceltaDenaroFreddo(i);
-                            resto = d.erogaProdotto(i, valutaIns);
+                            resto = d.erogaProdottoFreddo(i, valutaIns);
                             d.outputDistributoreFreddi(i, resto, valutaIns);
                             d.eliminaAtIndexFredde(i);
 
@@ -176,7 +178,7 @@ public class TestMain {
                             System.out.println("Il prodotto e' terminato");
                         } else {
                             valutaIns = d.sceltaDenaroFreddo(i);
-                            resto = d.erogaProdotto(i, valutaIns);
+                            resto = d.erogaProdottoFreddo(i, valutaIns);
                             d.outputDistributoreFreddi(i, resto, valutaIns);
                             d.eliminaAtIndexFredde(i);
 
@@ -184,12 +186,12 @@ public class TestMain {
                         break;
 
                     case 2:
-                      i = d.cercaProdottoFreddo(scelta);
+                        i = d.cercaProdottoFreddo(scelta);
                         if (i == -1) {
                             System.out.println("Il prodotto e' terminato");
                         } else {
                             valutaIns = d.sceltaDenaroFreddo(i);
-                            resto = d.erogaProdotto(i, valutaIns);
+                            resto = d.erogaProdottoFreddo(i, valutaIns);
                             d.outputDistributoreFreddi(i, resto, valutaIns);
                             d.eliminaAtIndexFredde(i);
 
@@ -201,7 +203,7 @@ public class TestMain {
                             System.out.println("Il prodotto e' terminato");
                         } else {
                             valutaIns = d.sceltaDenaroFreddo(i);
-                            resto = d.erogaProdotto(i, valutaIns);
+                            resto = d.erogaProdottoFreddo(i, valutaIns);
                             d.outputDistributoreFreddi(i, resto, valutaIns);
                             d.eliminaAtIndexFredde(i);
 
@@ -213,7 +215,7 @@ public class TestMain {
                             System.out.println("Il prodotto e' terminato");
                         } else {
                             valutaIns = d.sceltaDenaroFreddo(i);
-                            resto = d.erogaProdotto(i, valutaIns);
+                            resto = d.erogaProdottoFreddo(i, valutaIns);
                             d.outputDistributoreFreddi(i, resto, valutaIns);
                             d.eliminaAtIndexFredde(i);
 

@@ -69,20 +69,28 @@ public class Distributore {
         return -1; //errore si assicuri di aver scelto la categoria giusta //errore greve il porodotto non esiste
     }
 
-    public double erogaProdotto(int i, double valutaIns) {
+    public double erogaProdottoCaldo(int i, double valutaIns) {
 
         double x = 0;
         if (bevandeCalde[i].tipo.equals("caldo")) {
             //resto
             return x = valutaIns - bevandeCalde[i].getSelezione().getPrezzo();
 
-        } else if (bevandeCalde[i].tipo.equals("freddo")) {
+        }
+
+        return -12; //boh fra esplodi
+    }
+
+    public double erogaProdottoFreddo(int i, double valutaIns) {
+        
+        double x = 0;
+        if (bevandeFredde[i].tipo.equals("freddo")) {
             //resto
             return x = valutaIns - bevandeFredde[i].getSelezione().getPrezzo();
 
         }
 
-        return -12; //boh fra esplodi
+        return -16; //boh fra esplodi
     }
 
     public double sceltaDenaroCaldo(int i) {
@@ -191,7 +199,7 @@ public class Distributore {
                     System.out.println("Il distributore non acetta altri importi");
             }
 
-            if (somma >= bevandeCalde[i].getSelezione().getPrezzo()) {
+            if (somma >= bevandeFredde[i].getSelezione().getPrezzo()) {
                 a = false;
             }
 
