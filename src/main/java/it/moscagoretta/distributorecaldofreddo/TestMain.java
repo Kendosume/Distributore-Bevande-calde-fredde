@@ -235,7 +235,7 @@ public class TestMain {
 
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
             } else if (sceltaa.equals("wasd")) {
-                System.out.println("1234: visualizza i prodotti nel distributore");
+                System.out.println("1234: visualizza i prodotti della categoria che selezionerà nel distributore");
                 System.out.println("4321: Exit");
             } else {
                 System.out.println("Provi ascrivere con la minuscola la categoria");
