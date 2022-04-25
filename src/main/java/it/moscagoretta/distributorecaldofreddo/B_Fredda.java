@@ -13,7 +13,7 @@ public enum B_Fredda {
     SUCCO("succo",1.5,1),
     GATORADE("gatorade",2.5,2),
     COCACOLA("coca-cola",2.5,3),
-    FANTA("fanta",2,4);
+    FANTA("fanta",2.40,4);
 
     
     private String selezione;
